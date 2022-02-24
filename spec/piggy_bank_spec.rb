@@ -18,4 +18,11 @@ describe PiggyBank do
     expect(piggy_bank.shake).to eq "cling"
   end
 
+  it '.break to return the amount of coins in the piggy bank' do
+    piggy_bank = PiggyBank.new
+    expect(piggy_bank.break).to eq(0)
+    piggy_bank.put_coins(10)
+    expect(piggy_bank.break).to eq(10)
+  end
+
 end

@@ -10,4 +10,8 @@ class PiggyBank
   def shake
     return "cling" if @coins >= 1
   end
+
+  def break
+    @coins
+  end
 end
