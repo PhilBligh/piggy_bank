@@ -13,9 +13,9 @@ describe PiggyBank do
 
   it 'shake method returns "cling"' do
     piggy_bank = PiggyBank.new
-    expect(piggy_bank.shake).to eq nil
+    expect(piggy_bank.shake).to eq(nil)
     piggy_bank.put_coins(1)
-    expect(piggy_bank.shake).to eq "cling"
+    expect(piggy_bank.shake).to eq("cling")
   end
 
   it '.break to return the amount of coins in the piggy bank' do
