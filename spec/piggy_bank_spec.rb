@@ -11,4 +11,11 @@ describe PiggyBank do
     expect(piggy_bank.put_coins(10)).to eq(10)
   end
 
+  it 'shake method returns "cling"' do
+    piggy_bank = PiggyBank.new
+    expect(piggy_bank.shake).to eq nil
+    piggy_bank.put_coins(1)
+    expect(piggy_bank.shake).to eq "cling"
+  end
+
 end
